@@ -1,0 +1,10 @@
+{
+  "name": "rt-login",
+  "version": "0.1.0",
+  "description": "Тестовое задание для Ростелекома",
+  "main": "index.js",
+  "repository": "https://github.com/ol-bashkin/rt-login.git",
+  "author": "Олег Башкин",
+  "license": "MIT",
+  "private": true
+}
