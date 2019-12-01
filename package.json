@@ -33,7 +33,7 @@
         "react-hot-loader": "^4.12.18"
     },
     "scripts": {
-        "start": "webpack-dev-server --open --config webpack.dev.js",
-        "build": "webpack --config webpack.prod.js"
+        "start": "webpack-dev-server --open --config ./webpack/webpack.dev.js",
+        "build": "webpack --config ./webpack/webpack.prod.js"
     }
 }
