@@ -1,0 +1,92 @@
+.loginPage {
+    composes: page from "../styles.css";
+}
+
+.window {
+    width: 406px;
+    padding: 30px 20px 20px;
+    background-color: #fff;
+    box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.3);
+}
+
+.heading {
+    font-size: 22px;
+    font-weight: normal;
+    margin: 0 0 50px;
+}
+.input_container {
+    position: relative;
+    margin: 0 0 30px;
+}
+.label {
+    position: absolute;
+    margin: -36px 0 0;
+    opacity: 0.5;
+    color: #2f302f;
+    font-size: 16px;
+    line-height: 36px;
+    transition: transform 0.4s ease, font-size 0.4s ease;
+}
+.labelActive {
+    composes: label;
+    font-size: 14px;
+    transform: translateY(-24px);
+}
+.underline {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #CDCDCD;
+}
+.underlineError {
+    composes: underline;
+    background-color: #ff0000;
+}
+.underline::before {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 2px;
+    background-color: var(--secondary-color);
+    transition: width 0.4s ease;
+}
+.input {
+    width: 100%;
+    height: 36px;
+    border: none;
+    line-height: 36px;
+    font-family: inherit;
+    font-size: 16px;
+}
+.input:focus {
+    outline:none
+}
+.input:focus + .label {
+    font-size: 14px;
+    transform: translateY(-24px);
+}
+.input:focus ~ .underline:before {
+    width: 100%;
+}
+
+.button {
+    width: 144px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: var(--primary-color);
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 50px;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.4s ease;
+}
+.button:hover {
+    background-color: rgba(211, 55, 6, 1);
+}
+.button:focus {
+    outline: none;
+    background-color: rgba(211, 55, 6, 1);
+}

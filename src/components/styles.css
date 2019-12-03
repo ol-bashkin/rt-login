@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('/img/bg.svg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    color: #0a0a0a;
+
+    --primary-color: #FF4F12;
+    --secondary-color: #8519ff;
+
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
