@@ -28,7 +28,7 @@ class Login extends Component {
         this.setState({ values });
     }
 
-    checkValue = (mask, value) => !mask.test(value) ? true : false;
+    checkValue = (mask, value) => !mask.test(value);
 
     touchValue = (type) => {
         const errors = { ...this.state.errors };

@@ -11,13 +11,16 @@ class LoginInput extends Component {
         error: PropTypes.bool.isRequired,
         label: PropTypes.string
     }
+
     handleChange = event => {
         const updatedValue =  event.currentTarget.value;
         this.props.updateValue(this.props.type, updatedValue);
     }
+
     touchInput = () => {
         this.props.touchValue(this.props.type);
     }
+
     render() {
         let labelClass = this.props.value !== "" ? styles.labelActive : styles.label;
         let underlineClass = this.props.error ? styles.underlineError : styles.underline;
